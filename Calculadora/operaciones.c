@@ -29,23 +29,24 @@ int multiplicar(int numero1,int numero2)
 
 float dividir(int numero1,int numero2)
 {
-    int resultado;
+    float resultado;
 
     if(numero2==0)
     {
-        printf("No es posible dividir por 0\n");
+        printf("d) No es posible dividir por 0.\n");
 
     }
     else
     {
         resultado=(float)numero1/numero2;
-        printf("d) El resultado de %d/%d es: %d\n",numero1,numero2,resultado);
+        printf("d) El resultado de %d/%d es: %.2f\n",numero1,numero2,resultado);
 
         return resultado;
     }
 }
 
-/*int factorial(int numero1, int numero2)
+/*
+int factorial(int numero1, int numero2)
 {
     int resultado2;
     int resultado1;

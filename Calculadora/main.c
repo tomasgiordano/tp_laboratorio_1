@@ -4,16 +4,15 @@
 
 int main()
 {
-    int numero1;
-    int numero2;
+    int numero1=0;
+    int numero2=0;
     int opcion;
     char seguir='s';
-    int muestra1;
-    int muestra2;
+
     do
     {
-        printf("1. Ingresar 1er operando (A=%d).\n",muestra1);
-        printf("2. Ingresar 2do operando (B=%d).\n",muestra2);
+        printf("1. Ingresar 1er operando (A=%d).\n",numero1);
+        printf("2. Ingresar 2do operando (B=%d).\n",numero2);
         printf("3. Calcular todas las operaciones.\n");
         printf("4. Informar resultados.\n");
         printf("5. Salir.\n");
@@ -26,12 +25,10 @@ int main()
             case 1:
                 printf("Ingrese el primer operando: ");
                 scanf("%d",&numero1);
-                muestra1=numero1;
             break;
             case 2:
                 printf("Ingrese el segundo operando: ");
                 scanf("%d",&numero2);
-                muestra2=numero2;
             break;
             case 3:
                 sumar(numero1,numero2);
@@ -51,7 +48,6 @@ int main()
 
 
             break;
-
         }
 
         system("pause");
