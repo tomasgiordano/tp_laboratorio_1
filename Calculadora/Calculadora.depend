@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1553703015 source:c:\users\pc\desktop\tp1 laboratorio\tp_laboratorio_1\calculadora\main.c
+1553812867 source:c:\users\pc\desktop\tp1 laboratorio\tp_laboratorio_1\calculadora\main.c
 	<stdio.h>
 	<stdlib.h>
 	"operaciones.h"
 
-1553714277 source:c:\users\pc\desktop\tp1 laboratorio\tp_laboratorio_1\calculadora\operaciones.c
+1553810834 source:c:\users\pc\desktop\tp1 laboratorio\tp_laboratorio_1\calculadora\operaciones.c
 	"operaciones.h"
 
-1553641229 c:\users\pc\desktop\tp1 laboratorio\tp_laboratorio_1\calculadora\operaciones.h
+1553810820 c:\users\pc\desktop\tp1 laboratorio\tp_laboratorio_1\calculadora\operaciones.h
 
