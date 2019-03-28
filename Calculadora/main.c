@@ -68,8 +68,8 @@ int main()
                     resultadoResta=restar(numero1,numero2);
                     resultadoMultiplicacion=multiplicar(numero1,numero2);
                     resultadoDivision=dividir(numero1,numero2);
-                    resultadoFactorial1=factorial(numero1);
-                    resultadoFactorial2=factorial(numero2);
+                    resultadoFactorial1=sacarFactorial(numero1);
+                    resultadoFactorial2=sacarFactorial(numero2);
                     flagCalcular=1;
                     printf("\nCalculadas todas las operaciones.\n\n");
                 }
