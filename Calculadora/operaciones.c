@@ -1,46 +1,13 @@
 #include "operaciones.h"
-/** \brief SUMAR
- *
- * \param   numero1
- * \param   numero2
- * \return resultado(int)
+/** \brief                              SUMA
+ *          esta funcion suma dos operadores enteros y devuelve un resultado
+ * \param                            numero1(int)
+ * \param                            numero2(int)
+ * \return                          resultado(int)
  *
  */
 
- /** \brief RESTAR
-  *
-  * \param  numero1
-  * \param  numero2
-  * \return resultado(int)
-  *
-  */
-
-  /** \brief MULTIPLICAR
-   *
-   * \param numero1
-   * \param numero2
-   * \return resultado(int)
-   *
-   */
-
-    /** \brief DIVIDIR
-    *
-    * \param   numero1
-    * \param   numero2
-    * \return resultado(float)
-    *
-    */
-
-    /** \brief FACTORIAL
-     *
-     * \param  numero
-     * \return resultado(int)
-     *
-     */
-
-
-
-int sumar(int numero1,int numero2)
+ int sumar(int numero1,int numero2)
 {
     int resultado;
     resultado=numero1+numero2;
@@ -48,7 +15,15 @@ int sumar(int numero1,int numero2)
     return resultado;
 }
 
-int restar(int numero1,int numero2)
+ /** \brief                             RESTA
+ *          esta funcion resta dos operadores enteros y devuelve un resultado
+ * \param                            numero1(int)
+ * \param                            numero2(int)
+ * \return                          resultado(int)
+ *
+ */
+
+    int restar(int numero1,int numero2)
 {
     int resultado;
     resultado=numero1-numero2;
@@ -56,7 +31,15 @@ int restar(int numero1,int numero2)
     return resultado;
 }
 
-int multiplicar(int numero1,int numero2)
+/** \brief                          MULTIPLICACION
+ *          esta funcion multiplica dos operadores enteros y devuelve un resultado
+ * \param                            numero1(int)
+ * \param                            numero2(int)
+ * \return                          resultado(int)
+ *
+ */
+
+    int multiplicar(int numero1,int numero2)
 {
     int resultado;
     resultado=numero1*numero2;
@@ -64,7 +47,15 @@ int multiplicar(int numero1,int numero2)
     return resultado;
 }
 
-float dividir(int numero1,int numero2)
+/** \brief                              DIVISION
+ *          esta funcion divide dos operadores enteros y devuelve un resultado flotante
+ * \param                             numero1(int)
+ * \param                             numero2(int)
+ * \return                          resultado(float)
+ *
+ */
+
+    float dividir(int numero1,int numero2)
 {
     float resultado;
     resultado=(float)numero1/numero2;
@@ -73,10 +64,19 @@ float dividir(int numero1,int numero2)
 
 }
 
+/** \brief                            FACTORIAL
+ *              esta funcion calcula el factorial de un numero entero
+ * \param                            numero1(int)
+ * \return                          resultado(int)
+ *
+ */
+
 int sacarFactorial(int numero)
 {
-    int resultado;
+    int resultado=0;
 
+    if(numero>=0)
+    {
         if(numero==0 || numero==1)
         {
         resultado=1;
@@ -85,6 +85,7 @@ int sacarFactorial(int numero)
         {
         resultado = numero * sacarFactorial(numero-1);
         }
+    }
 
     return resultado;
 }

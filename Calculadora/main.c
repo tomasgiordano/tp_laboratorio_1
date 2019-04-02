@@ -4,8 +4,8 @@
 
 int main()
 {
-    int numero1=0;
-    int numero2=0;
+    int numero1;
+    int numero2;
     int flagA=0;
     int flagB=0;
     int flagCalcular=0;
@@ -14,7 +14,7 @@ int main()
     int resultadoSuma;
     int resultadoResta;
     int resultadoMultiplicacion;
-    double resultadoDivision;
+    float resultadoDivision;
     int resultadoFactorial1;
     int resultadoFactorial2;
 
@@ -82,9 +82,12 @@ int main()
                 }
                 else
                 {
+                    //SUMA RESTA MULTIPLICACION
                     printf("a) El resultado de %d+%d es: %d\n",numero1,numero2,resultadoSuma);
                     printf("b) El resultado de %d-%d es: %d\n",numero1,numero2,resultadoResta);
                     printf("c) El resultado de %d*%d es: %d\n",numero1,numero2,resultadoMultiplicacion);
+
+                    //DIVISION
                     if(numero2==0)
                     {
                         printf("d) No es posible dividir por 0.\n");
@@ -93,21 +96,36 @@ int main()
                     {
                         printf("d) El resultado de %d/%d es: %.2f\n",numero1,numero2,resultadoDivision);
                     }
-                    printf("e) El factorial de %d es: %d y el factorial de %d es: %d\n",numero1,resultadoFactorial1,numero2,resultadoFactorial2);
+
+                    //FACTORIAL
+                    if(numero1<0 && numero2<0)
+                    {
+                        printf("e) No se pueden calcular los factoriales de estos valores.\n");
+                    }
+                    else if(numero1<0)
+                    {
+                        printf("e) El factorial de %d NO se puede calcular y el factorial de %d es: %d\n",numero1,numero2,resultadoFactorial2);
+                    }
+                    else if(numero2<0)
+                    {
+                        printf("e) El factorial de %d es: %d y el factorial de %d NO se puede calcular\n",numero1,resultadoFactorial1,numero2);
+                    }
+                    else
+                    {
+                        printf("e) El factorial de %d es: %d y el factorial de %d es: %d\n",numero1,resultadoFactorial1,numero2,resultadoFactorial2);
+                    }
                 }
                 system("pause");
-
             break;
             case 5:
                 seguir='n';
             break;
             default:
-
-
+                printf("ERROR. Ingrese una opcion valida.\n");
+                system("pause");
             break;
         }
 
-        //system("pause");
         system("cls");
 
     }while(seguir=='s');
